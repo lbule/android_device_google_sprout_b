@@ -1,1 +1,1 @@
-add_lunch_combo vrtoxin_sprout-userdebug
+add_lunch_combo vrtoxin_sprout_b-userdebug

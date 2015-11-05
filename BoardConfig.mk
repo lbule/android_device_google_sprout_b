@@ -14,12 +14,11 @@
 # limitations under the License.
 #
 
-# inherit from common sprout repo
-
 TARGET_OTA_ASSERT_DEVICE := sprout,sprout_b,sprout4,sprout8
 
-TARGET_RECOVERY_FSTAB := device/google/sprout/rootdir/root/fstab.sprout
-LOCAL_PATH := device/google/sprout
+LOCAL_PATH := device/google/sprout_b
+
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.sprout
 
 TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
@@ -103,7 +102,7 @@ USE_CAMERA_STUB := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/google/sprout/sepolicy
+    device/google/sprout_b/sepolicy
 
 # VrToxin
 TARGET_VRTOXIN_ROM=4.9
